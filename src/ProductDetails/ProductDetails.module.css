@@ -1,0 +1,58 @@
+.productDetails{
+    width: 50%;
+  }
+  
+  .productTitle{
+    font-size: 48px;
+    font-weight: 600;
+  }
+  
+  .productData{
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .colorOption{
+    display: flex;
+  }
+  
+  .colorOption > img{
+    max-width: 100%;
+    height: 140px;
+    border-radius: 5px;
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  
+  .selectedProductImage{
+    border: 2px solid teal;
+  }
+  
+  .featuresButtons > button{
+    font-size: 15px;
+    border: 1px solid grey;
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 40px;
+    width: 15%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .selectFeatureButton{
+    color: white;
+    background-color: rgb(66, 66, 66);
+  }
+  
+  .buy{
+    color: white;
+    font-size: 15px;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: teal;
+    height: 40px;
+    width: 15%;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
