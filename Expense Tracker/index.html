@@ -1,0 +1,84 @@
+<html>
+   <head>
+       <title>Expense Tracker</title>
+   </head>
+
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="styles.css">
+
+
+   <body>
+
+
+       <div class="header">
+           <header>EXPENSE TRACKER</header>
+       </div>
+
+
+
+
+       <div class="display-container">
+           <div class="nett-display">
+               <p class="nett">NETT :</p>
+               <p class="display"></p>
+           </div>
+           <div class="incomeContainer">
+               <p class="income">TOTAL INCOME</p>
+               <p class="netIncome"></p>
+           </div>
+           <div class="expenseContainer">
+               <p class="expense">TOTAL EXPENSE</p>
+               <p class="netExpense"></p>
+           </div>
+          
+
+
+       </div>
+
+
+
+
+       <div class="get-values">
+           <select class="add-type" onchange="getOperator()">
+               <option value="null"></option>
+               <option class="inc" value="inc">+</option>
+               <option class="exp" value="exp">-</option>
+           </select>
+           <input class="description" type="text" placeholder="Add Description" maxlength="25" onchange="getDescription()">
+           <input class="amount" type="number" placeholder="Enter Amount" max="7" onchange="getAmount()">
+           <button class="add-btn" type="button" onclick="addValues()"><i class="ion-ios-checkmark-outline"></i></button>
+       </div>
+
+
+
+
+       <div class="summary">
+           <div class="income-summary">
+               <div class="income-title">INCOME</div>
+               <div class="income-list"></div>
+           </div>
+
+
+           <div class="expense-summary">
+               <div class="expense-title">EXPENSE</div>
+               <div class="expense-list"></div>
+           </div>
+       </div>
+
+
+
+
+       <div class="footer">
+           <footer>Created during Hackathon</footer>
+       </div>
+
+
+   </body>
+
+
+   <script type="text/javascript" src="script.js"></script>
+
+
+</html>
